@@ -6,8 +6,7 @@ const btn2 = document.getElementById("btn2");
 function getSwapi() {
   const randomNumber = Math.ceil(Math.random() * 83);
 
-  // had to update from swapi.dev due to some issues with that API
-  fetch(`https://swapi.tech/api/people/${randomNumber}`)
+  fetch(`https://swapi.dev/api/people/${randomNumber}`)
     .then((response) => response.json())
     .then((character) => {
       console.log(character);
